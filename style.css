@@ -32,6 +32,7 @@ a:hover {
 
 body {
     margin-top: 10%;
+    position: relative;
 }
 
 .main-header {
@@ -171,7 +172,11 @@ td {
 
 /* footer */
 footer {
-    background-color: rgb(245, 235, 220);
+    background-image: linear-gradient(rgb(252, 232, 204), rgb(197, 141, 137));
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .main-footer {
@@ -340,4 +345,47 @@ button:hover {
     transform: scale(1.2, 1.2);
     background-color: rgb(219, 85, 75);
 
+}
+.fa-map-location-dot, .fa-map-pin, .fa-address-book, .fa-phone, .fa-instagram {
+    margin: 6px;
+    color: rgb(77, 0, 185);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.dropdown-content {
+    display: none;
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    position: absolute;
+    top: 100%;
+    background-color: antiquewhite;
+}
+
+.dropdown-item:hover {
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+a.dropdown-item {
+    min-width: 160px;
+    text-align: left;
+}
+
+li.dropdown-item:hover a.dropdown-item {
+    text-align: left;
+    color: gainsboro;
 }
